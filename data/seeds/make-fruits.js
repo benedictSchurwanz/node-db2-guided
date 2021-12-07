@@ -1,5 +1,5 @@
 exports.seed = function (knex) {
-  // Truncating a table eletes ALL existing entries
+  // Truncating a table deletes ALL existing entries and resets the primary keys
   return knex('fruits').truncate()
     .then(function () {
       // Inserts seed entries
