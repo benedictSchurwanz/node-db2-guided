@@ -9,6 +9,9 @@ exports.up = async function(knex) {
 
     table.decimal('avg_weight_oz')
       .notNullable()
+
+    table.boolean('delicious')
+      
   })
 }
 
