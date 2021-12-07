@@ -11,7 +11,7 @@ exports.up = async function(knex) {
       .notNullable()
 
     table.boolean('delicious')
-      .defaultTo(false)
+      // .defaultTo(false)
   })
 }
 
