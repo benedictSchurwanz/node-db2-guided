@@ -6,6 +6,8 @@ exports.up = async function(knex) {
     table.text('fruit_name', 128) // sqlite does not enforce the char limit
       .unique()
       .notNullable()
+
+    table.decimal('avg_weight_')
   })
 }
 
