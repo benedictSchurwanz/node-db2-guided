@@ -6,4 +6,6 @@ const currentEnv = process.env.NODE_ENV || 'development'
 
 const configToUse = configs[currentEnv]
 
-const connection = knex()
+const connection = knex(configToUse)
+
+module.exports = connection
