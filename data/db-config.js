@@ -4,4 +4,4 @@ const configs = require('../knexfile')
 
 const currentEnv = process.env.NODE_ENV || 'development'
 
-const 
+const configToUse = configs[]
