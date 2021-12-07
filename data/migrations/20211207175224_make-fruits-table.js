@@ -7,7 +7,8 @@ exports.up = async function(knex) {
       .unique()
       .notNullable()
 
-    table.decimal('avg_weight_')
+    table.decimal('avg_weight_oz')
+      .notNullable()
   })
 }
 
