@@ -4,4 +4,6 @@ const configs = require('../knexfile')
 
 const currentEnv = process.env.NODE_ENV || 'development'
 
-const configToUse = configs[]
+const configToUse = configs[currentEnv]
+
+const connection = knex()
