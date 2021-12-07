@@ -17,6 +17,7 @@ router.get('/', (req, res) => {
       res.json(fruits);
     })
     .catch(err => {
+      console.log('GET error', err);
       res.status(500).json({ message: 'Failed to retrieve fruits' });
     });
 });
@@ -29,6 +30,7 @@ router.get('/:id', (req, res) => {
       res.json(fruit);
     })
     .catch(err => {
+      console.log('GET error', err);
       res.status(500).json({ message: 'Failed to retrieve fruit' });
     });
 });
