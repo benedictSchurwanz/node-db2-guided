@@ -1,5 +1,7 @@
 module.exports = {
-  development: {},
+  development: {
+    client: 'sqlite3'
+  },
   production: {},
   testing: {}
 }
