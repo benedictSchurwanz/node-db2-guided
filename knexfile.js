@@ -4,6 +4,7 @@ module.exports = {
     connection: {
       filename: './data/produce.db3',
     },
+    useNullAsDefault: true,
     
   },
   production: {},
